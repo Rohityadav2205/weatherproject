@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>weather data </title>
+</head>
+<body style="background-color:green;">
+<form>
+    <center>
+        <h2>Enter City Name </h2>
+
+
+    <input type="text" name="city" value="{{city}}" placeholder="City name" required> <br><br>
+
+        <input type="submit" value="search"/>
+        <br>
+        <h1>Weather-Main :{{code}}</h1>
+        <h1>Weather-Description :{{code}}</h1>
+        <h1>Weather-Temp :{[0]}</h1>
+        <h2>{{weather}}</h2>
+
+
+
+<img style="width:300px;" src="https://openweathermap.org/img/w/{{currenticon}}.png"/>
+
+
+    </center>
+</form>
+</body>
+</html>
