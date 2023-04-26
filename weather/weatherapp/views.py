@@ -42,7 +42,7 @@ def weather(request):
             visibility=jsondata.get("main").get("visibility")
             print(visibility," ")
         return render(request, "show data.html",
-                      {"weather": response.text, "code": wmain, "city": city, "currenticon": currenticon, "wdescription":wdescription, "temp":temp})
+                      {"weather": response.text, "code": wmain, "city": city, "currenticon": currenticon, "wdescription":wdescription, "temp":temp,"pressure":pressure})
     return render(request, "show data.html", {"weather": "", "code": "", ",city": ""})
 
 
